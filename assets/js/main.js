@@ -1,10 +1,10 @@
 // ── Datos del negocio (cámbialos aquí y se actualiza todo el sitio) ──
 const NEGOCIO = {
-  whatsapp:  '520000000000',            // ⚠ código de país + número, sin espacios ni "+"
-  telefono:  '',                        // ⚠ ej. '3121234567'
+  whatsapp:  '523121225144',            // código de país + número, sin espacios ni "+"
+  telefono:  '3121225144',
   facebook:  '',                        // ⚠ link completo de la página
   instagram: '',                        // ⚠ link completo del perfil
-  maps:      'https://maps.google.com/' // ⚠ link de Google Maps del estudio
+  maps:      'https://maps.google.com/?q=765F%2B4P+Villa+de+%C3%81lvarez,+Colima'
 };
 
 // ── Enlaces de WhatsApp / redes ─────────────────────────────────────
