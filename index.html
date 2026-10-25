@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Querida Yo Nails Studio — Manicure, gelish, uñas acrílicas, pedicure y nail art. El arte de quererte. Agenda tu cita por WhatsApp." />
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; img-src 'self' data:; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self';" />
+  <meta name="theme-color" content="#fbf7f1" />
+  <meta property="og:title" content="Querida Yo Nails Studio" />
+  <meta property="og:description" content="El arte de quererte. Agenda tu cita por WhatsApp." />
+  <meta property="og:image" content="assets/img/logo.png" />
+  <title>Querida Yo Nails Studio</title>
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/img/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="dns-prefetch" href="https://wa.me" />
+  <link rel="preload" as="image" href="assets/img/logo.webp" type="image/webp" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Great+Vibes&family=Nunito+Sans:wght@400;600;700&display=swap" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ══ NAV ══════════════════════════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-brand">Querida <span class="script">yo</span></a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Menú" aria-expanded="false">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#servicios" class="js-nav-link">Servicios</a></li>
+        <li><a href="#galeria"   class="js-nav-link">Galería</a></li>
+        <li><a href="#horarios"  class="js-nav-link">Horarios</a></li>
+        <li><a href="#ubicacion" class="js-nav-link">Ubicación</a></li>
+        <li><a href="#contacto"  class="js-nav-link btn-nav">Agendar cita</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ══ HERO ══════════════════════════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-content">
+      <picture>
+        <source srcset="assets/img/logo.webp" type="image/webp" />
+        <img src="assets/img/logo.png" alt="Querida Yo Nails Studio — el arte de quererte" class="hero-logo"
+             width="600" height="565" fetchpriority="high" />
+      </picture>
+      <h1 class="sr-only">Querida Yo Nails Studio</h1>
+      <p class="hero-text">Uñas hermosas, hechas con calma y con cariño.<br>Date el tiempo que mereces.</p>
+      <a href="#contacto" class="btn-primary js-wa"
+         data-msg="Hola 💅 me gustaría agendar una cita en Querida Yo Nails Studio">
+        Agendar cita por WhatsApp
+      </a>
+    </div>
+    <a href="#sobre" class="hero-scroll" aria-label="Bajar">↓</a>
+  </section>
+
+  <!-- ══ SOBRE NOSOTRAS ════════════════════════════════════════════ -->
+  <section id="sobre" class="section-light">
+    <div class="container">
+      <div class="divider" aria-hidden="true"><span>❀</span></div>
+      <h2 class="section-title">Sobre <span class="script">nosotras</span></h2>
+      <p class="section-text">
+        En <strong>Querida Yo Nails Studio</strong> creemos que consentirte no es un lujo, es amor propio.
+        Cada servicio está pensado para que salgas sintiéndote bonita, segura y renovada,
+        en un espacio tranquilo donde el tiempo es solo para ti.
+      </p>
+      <div class="pillars">
+        <div class="pillar">
+          <span class="pillar-icon">💅</span>
+          <h3>Detalle</h3>
+          <p>Acabados limpios y duraderos, uña por uña.</p>
+        </div>
+        <div class="pillar">
+          <span class="pillar-icon">🌸</span>
+          <h3>Higiene</h3>
+          <p>Herramientas desinfectadas y material de calidad en cada cita.</p>
+        </div>
+        <div class="pillar">
+          <span class="pillar-icon">✨</span>
+          <h3>Tu estilo</h3>
+          <p>Desde lo natural y elegante hasta diseños llenos de color.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SERVICIOS ════════════════════════════════════════════════
+       Para cambiar precios: edita el texto dentro de <div class="service-price">
+  ═══════════════════════════════════════════════════════════════ -->
+  <section id="servicios" class="section-blush">
+    <div class="container">
+      <div class="divider" aria-hidden="true"><span>❀</span></div>
+      <h2 class="section-title">Nuestros <span class="script">servicios</span></h2>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-icon">🤍</div>
+          <h3>Manicure clásico</h3>
+          <p>Limado, cutícula, hidratación y esmaltado tradicional.</p>
+          <div class="service-price">Consultar</div>
+          <a href="#contacto" class="btn-service js-wa" data-msg="Hola 💅 quiero agendar un manicure clásico">Agendar</a>
+        </div>
+
+        <div class="service-card featured">
+          <div class="badge">Favorito</div>
+          <div class="service-icon">💅</div>
+          <h3>Gelish / semipermanente</h3>
+          <p>Color con brillo intenso que dura de 2 a 3 semanas sin despostillarse.</p>
+          <div class="service-price">Consultar</div>
+          <a href="#contacto" class="btn-service js-wa" data-msg="Hola 💅 quiero agendar gelish">Agendar</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">💎</div>
+          <h3>Uñas acrílicas</h3>
+          <p>Aplicación completa con la forma y el largo que prefieras.</p>
+          <div class="service-price">Consultar</div>
+          <a href="#contacto" class="btn-service js-wa" data-msg="Hola 💅 quiero agendar uñas acrílicas">Agendar</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🦶</div>
+          <h3>Pedicure spa</h3>
+          <p>Exfoliación, hidratación profunda y esmaltado para unos pies consentidos.</p>
+          <div class="service-price">Consultar</div>
+          <a href="#contacto" class="btn-service js-wa" data-msg="Hola 💅 quiero agendar un pedicure spa">Agendar</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🌷</div>
+          <h3>Nail art</h3>
+          <p>Diseños a mano, flores, francés, piedritas y efectos especiales.</p>
+          <div class="service-price">Consultar</div>
+          <a href="#contacto" class="btn-service js-wa" data-msg="Hola 💅 quiero cotizar un diseño de nail art">Cotizar</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🌿</div>
+          <h3>Retiro y mantenimiento</h3>
+          <p>Retiro seguro de producto y relleno para que tus uñas luzcan siempre bien.</p>
+          <div class="service-price">Consultar</div>
+          <a href="#contacto" class="btn-service js-wa" data-msg="Hola 💅 quiero agendar retiro o mantenimiento">Agendar</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ GALERÍA ══════════════════════════════════════════════════
+       Reemplaza las fotos en assets/img/galeria/ (unas-01.jpg … unas-06.jpg)
+  ═══════════════════════════════════════════════════════════════ -->
+  <section id="galeria" class="section-light">
+    <div class="container">
+      <div class="divider" aria-hidden="true"><span>❀</span></div>
+      <h2 class="section-title">Nuestro <span class="script">trabajo</span></h2>
+      <p class="section-text">Cada set, una pequeña obra de arte. Inspírate para tu próxima cita.</p>
+      <div class="gallery-grid">
+        <button class="gallery-item" type="button"><img src="assets/img/galeria/unas-01.jpg" alt="Diseño de uñas 1" loading="lazy" width="600" height="600" /><span class="gallery-overlay">Ver</span></button>
+        <button class="gallery-item" type="button"><img src="assets/img/galeria/unas-02.jpg" alt="Diseño de uñas 2" loading="lazy" width="600" height="600" /><span class="gallery-overlay">Ver</span></button>
+        <button class="gallery-item" type="button"><img src="assets/img/galeria/unas-03.jpg" alt="Diseño de uñas 3" loading="lazy" width="600" height="600" /><span class="gallery-overlay">Ver</span></button>
+        <button class="gallery-item" type="button"><img src="assets/img/galeria/unas-04.jpg" alt="Diseño de uñas 4" loading="lazy" width="600" height="600" /><span class="gallery-overlay">Ver</span></button>
+        <button class="gallery-item" type="button"><img src="assets/img/galeria/unas-05.jpg" alt="Diseño de uñas 5" loading="lazy" width="600" height="600" /><span class="gallery-overlay">Ver</span></button>
+        <button class="gallery-item" type="button"><img src="assets/img/galeria/unas-06.jpg" alt="Diseño de uñas 6" loading="lazy" width="600" height="600" /><span class="gallery-overlay">Ver</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ LIGHTBOX ══════════════════════════════════════════════════ -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+    <button class="lightbox-close" type="button" aria-label="Cerrar">✕</button>
+    <img id="lightbox-img" src="data:," alt="" />
+  </div>
+
+  <!-- ══ HORARIOS ══════════════════════════════════════════════════
+       ⚠ POR CONFIRMAR: ajusta las horas reales del estudio
+  ═══════════════════════════════════════════════════════════════ -->
+  <section id="horarios" class="section-blush">
+    <div class="container">
+      <div class="divider" aria-hidden="true"><span>❀</span></div>
+      <h2 class="section-title">Nuestros <span class="script">horarios</span></h2>
+      <div class="schedule-wrap">
+        <table class="schedule">
+          <tbody>
+            <tr><td class="day">Lunes</td>     <td class="time open">10:00 AM – 7:00 PM</td></tr>
+            <tr><td class="day">Martes</td>    <td class="time open">10:00 AM – 7:00 PM</td></tr>
+            <tr><td class="day">Miércoles</td> <td class="time open">10:00 AM – 7:00 PM</td></tr>
+            <tr><td class="day">Jueves</td>    <td class="time open">10:00 AM – 7:00 PM</td></tr>
+            <tr><td class="day">Viernes</td>   <td class="time open">10:00 AM – 7:00 PM</td></tr>
+            <tr><td class="day">Sábado</td>    <td class="time open">10:00 AM – 3:00 PM</td></tr>
+            <tr><td class="day">Domingo</td>   <td class="time closed">Cerrado</td></tr>
+          </tbody>
+        </table>
+        <p class="schedule-note">Atención con cita previa. Confirma tu horario por WhatsApp.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ UBICACIÓN ════════════════════════════════════════════════
+       ⚠ POR CONFIRMAR: dirección, teléfono y link de Google Maps
+  ═══════════════════════════════════════════════════════════════ -->
+  <section id="ubicacion" class="section-light">
+    <div class="container">
+      <div class="divider" aria-hidden="true"><span>❀</span></div>
+      <h2 class="section-title">¿Dónde <span class="script">encontrarnos?</span></h2>
+      <div class="location-wrap">
+        <div class="location-info">
+          <div class="location-item">
+            <span class="loc-icon">📍</span>
+            <div>
+              <strong>Dirección</strong>
+              <p>Calle y número, colonia<br>Ciudad, Estado</p>
+            </div>
+          </div>
+          <div class="location-item">
+            <span class="loc-icon">📞</span>
+            <div>
+              <strong>Teléfono</strong>
+              <p><a href="tel:+520000000000" class="js-tel">000 000 0000</a></p>
+            </div>
+          </div>
+          <div class="location-item">
+            <span class="loc-icon">🗺️</span>
+            <div>
+              <strong>Google Maps</strong>
+              <p><a href="https://maps.google.com/" class="js-maps" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">Ver en Google Maps →</a></p>
+            </div>
+          </div>
+        </div>
+        <a href="https://maps.google.com/" class="map-card js-maps" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">
+          <span class="map-icon">🗺️</span>
+          <span>Abrir en Google Maps</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CONTACTO / CTA ════════════════════════════════════════════ -->
+  <section id="contacto" class="section-cta">
+    <div class="container">
+      <p class="cta-script">el arte de quererte</p>
+      <h2 class="section-title">¿Lista para <span class="script">consentirte?</span></h2>
+      <p class="section-text">Escríbenos y apartamos tu lugar. Es rápido y sencillo.</p>
+      <div class="cta-buttons">
+        <a href="#contacto" class="btn-primary btn-lg js-wa"
+           data-msg="Hola 💅 me gustaría agendar una cita en Querida Yo Nails Studio">💬 WhatsApp</a>
+        <a href="#contacto" class="btn-secondary btn-lg js-fb" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">📘 Facebook</a>
+        <a href="#contacto" class="btn-secondary btn-lg js-ig" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">📸 Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ════════════════════════════════════════════════════ -->
+  <footer>
+    <div class="container footer-inner">
+      <span class="footer-brand">Querida <span class="script">yo</span> · nails studio</span>
+      <p class="footer-copy">© 2026 Querida Yo Nails Studio · El arte de quererte</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
