@@ -31,8 +31,9 @@ const GALERIA = [
 // Pon primero el más reciente. Se muestran los primeros 3.
 const PUBLICACIONES = [
   '1095477813357165',   // Halloween
-  '3045423175818691',   // ¡Un sueño más que se cumple en casa!
-  '28963847196639416'   // Pasos firmes y llenos de luz
+  '28963847196639416',  // Pasos firmes y llenos de luz
+  '1644316460538676'    // Destellos que enamoran
+  // '3045423175818691' (¡Un sueño más…!) no se puede insertar: Facebook lo bloquea fuera de Facebook
 ];
 
 const CATALOGO = [
