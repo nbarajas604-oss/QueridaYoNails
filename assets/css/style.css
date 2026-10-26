@@ -406,3 +406,8 @@ footer { background: var(--vino); color: var(--blush); padding: 34px 0; text-ali
   .lightbox-prev { left: 6px; }
   .lightbox-next { right: 6px; }
 }
+
+/* ── FOOTER: enlaces ────────────────────────────────────────────── */
+.footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 20px; margin: 6px 0; }
+.footer-links a { color: var(--blush); text-decoration: none; font-size: .9rem; font-weight: 600; }
+.footer-links a:hover { color: #fff; text-decoration: underline; }

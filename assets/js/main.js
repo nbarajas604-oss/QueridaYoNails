@@ -3,7 +3,7 @@ const NEGOCIO = {
   whatsapp:  '523121335144',            // código de país + número, sin espacios ni "+"
   telefono:  '3121335144',
   catalogo:  'https://wa.me/c/5213121335144',  // link oficial del catálogo de WhatsApp Business
-  facebook:  '',                        // ⚠ link completo de la página
+  facebook:  'https://www.facebook.com/profile.php?id=61592850142259',
   instagram: '',                        // ⚠ link completo del perfil
   maps:      'https://maps.google.com/?q=765F%2B4P+Villa+de+%C3%81lvarez,+Colima'
 };
