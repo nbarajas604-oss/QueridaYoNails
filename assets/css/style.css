@@ -179,6 +179,9 @@ section { padding: 90px 0; content-visibility: auto; contain-intrinsic-size: 1px
 }
 .btn-service:hover { background: var(--rosa-viejo); color: #fff; }
 
+.catalog-cta { text-align: center; margin-top: 44px; }
+.catalog-cta p { color: var(--texto-suave); margin-bottom: 14px; }
+
 /* ── GALERÍA ────────────────────────────────────────────────────── */
 .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .gallery-item {

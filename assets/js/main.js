@@ -14,6 +14,12 @@ document.querySelectorAll('.js-wa').forEach(a => {
   a.rel = 'noopener noreferrer';
   a.referrerPolicy = 'no-referrer';
 });
+document.querySelectorAll('.js-catalogo').forEach(a => {
+  a.href = `https://wa.me/c/${NEGOCIO.whatsapp}`;
+  a.target = '_blank';
+  a.rel = 'noopener noreferrer';
+  a.referrerPolicy = 'no-referrer';
+});
 document.querySelectorAll('.js-maps').forEach(a => { a.href = NEGOCIO.maps; });
 if (NEGOCIO.telefono) {
   document.querySelectorAll('.js-tel').forEach(a => {
