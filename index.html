@@ -18,7 +18,7 @@
   <link rel="dns-prefetch" href="https://wa.me" />
   <link rel="preload" as="image" href="assets/img/logo.webp" type="image/webp" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Great+Vibes&family=Nunito+Sans:wght@400;600;700&display=swap" />
-  <link rel="stylesheet" href="assets/css/style.css?v=3" />
+  <link rel="stylesheet" href="assets/css/style.css?v=4" />
 </head>
 <body>
 
@@ -87,94 +87,39 @@
   </section>
 
   <!-- ══ SERVICIOS ════════════════════════════════════════════════
-       Para cambiar precios: edita el texto dentro de <div class="service-price">
+       Las tarjetas salen de assets/js/catalogo-datos.js (mismo catálogo de WhatsApp)
   ═══════════════════════════════════════════════════════════════ -->
   <section id="servicios" class="section-blush">
     <div class="container">
       <div class="divider" aria-hidden="true"><span>❀</span></div>
       <h2 class="section-title">Nuestros <span class="script">servicios</span></h2>
-      <div class="services-grid">
-
-        <div class="service-card">
-          <div class="service-icon">🤍</div>
-          <h3>Manicure clásico</h3>
-          <p>Limado, cutícula, hidratación y esmaltado tradicional.</p>
-          <div class="service-price">Consultar</div>
-          <a href="#contacto" class="btn-service js-wa" data-msg="Hola 💅 quiero agendar un manicure clásico">Agendar</a>
-        </div>
-
-        <div class="service-card featured">
-          <div class="badge">Favorito</div>
-          <div class="service-icon">💅</div>
-          <h3>Gelish / semipermanente</h3>
-          <p>Color con brillo intenso que dura de 2 a 3 semanas sin despostillarse.</p>
-          <div class="service-price">Consultar</div>
-          <a href="#contacto" class="btn-service js-wa" data-msg="Hola 💅 quiero agendar gelish">Agendar</a>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">💎</div>
-          <h3>Uñas acrílicas</h3>
-          <p>Aplicación completa con la forma y el largo que prefieras.</p>
-          <div class="service-price">Consultar</div>
-          <a href="#contacto" class="btn-service js-wa" data-msg="Hola 💅 quiero agendar uñas acrílicas">Agendar</a>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">🦶</div>
-          <h3>Pedicure spa</h3>
-          <p>Exfoliación, hidratación profunda y esmaltado para unos pies consentidos.</p>
-          <div class="service-price">Consultar</div>
-          <a href="#contacto" class="btn-service js-wa" data-msg="Hola 💅 quiero agendar un pedicure spa">Agendar</a>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">🌷</div>
-          <h3>Nail art</h3>
-          <p>Diseños a mano, flores, francés, piedritas y efectos especiales.</p>
-          <div class="service-price">Consultar</div>
-          <a href="#contacto" class="btn-service js-wa" data-msg="Hola 💅 quiero cotizar un diseño de nail art">Cotizar</a>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">🌿</div>
-          <h3>Retiro y mantenimiento</h3>
-          <p>Retiro seguro de producto y relleno para que tus uñas luzcan siempre bien.</p>
-          <div class="service-price">Consultar</div>
-          <a href="#contacto" class="btn-service js-wa" data-msg="Hola 💅 quiero agendar retiro o mantenimiento">Agendar</a>
-        </div>
-
-      </div>
+      <div class="services-grid" id="servicesGrid"></div>
       <div class="catalog-cta">
-        <p>Mira todos nuestros diseños, precios y tiempos en el catálogo</p>
+        <p>Conoce cada servicio a detalle, con más fotos, en nuestro catálogo</p>
         <a href="catalogo.html" class="btn-primary">🛍️ Ver catálogo completo</a>
       </div>
     </div>
   </section>
 
   <!-- ══ GALERÍA ══════════════════════════════════════════════════
-       Reemplaza las fotos en assets/img/galeria/ (unas-01.jpg … unas-06.jpg)
+       Las fotos se eligen en GALERIA dentro de assets/js/catalogo-datos.js
   ═══════════════════════════════════════════════════════════════ -->
   <section id="galeria" class="section-light">
     <div class="container">
       <div class="divider" aria-hidden="true"><span>❀</span></div>
       <h2 class="section-title">Nuestro <span class="script">trabajo</span></h2>
       <p class="section-text">Cada set, una pequeña obra de arte. Inspírate para tu próxima cita.</p>
-      <div class="gallery-grid">
-        <button class="gallery-item" type="button"><img src="assets/img/galeria/unas-01.jpg" alt="Diseño de uñas 1" loading="lazy" width="600" height="600" /><span class="gallery-overlay">Ver</span></button>
-        <button class="gallery-item" type="button"><img src="assets/img/galeria/unas-02.jpg" alt="Diseño de uñas 2" loading="lazy" width="600" height="600" /><span class="gallery-overlay">Ver</span></button>
-        <button class="gallery-item" type="button"><img src="assets/img/galeria/unas-03.jpg" alt="Diseño de uñas 3" loading="lazy" width="600" height="600" /><span class="gallery-overlay">Ver</span></button>
-        <button class="gallery-item" type="button"><img src="assets/img/galeria/unas-04.jpg" alt="Diseño de uñas 4" loading="lazy" width="600" height="600" /><span class="gallery-overlay">Ver</span></button>
-        <button class="gallery-item" type="button"><img src="assets/img/galeria/unas-05.jpg" alt="Diseño de uñas 5" loading="lazy" width="600" height="600" /><span class="gallery-overlay">Ver</span></button>
-        <button class="gallery-item" type="button"><img src="assets/img/galeria/unas-06.jpg" alt="Diseño de uñas 6" loading="lazy" width="600" height="600" /><span class="gallery-overlay">Ver</span></button>
-      </div>
+      <div class="gallery-grid" id="galleryGrid"></div>
     </div>
   </section>
 
   <!-- ══ LIGHTBOX ══════════════════════════════════════════════════ -->
   <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
     <button class="lightbox-close" type="button" aria-label="Cerrar">✕</button>
+    <button class="lightbox-nav lightbox-prev" id="lightbox-prev" type="button" aria-label="Foto anterior" hidden>‹</button>
     <img id="lightbox-img" src="data:," alt="" />
+    <button class="lightbox-nav lightbox-next" id="lightbox-next" type="button" aria-label="Foto siguiente" hidden>›</button>
+    <span class="lightbox-count" id="lightbox-count" hidden></span>
   </div>
 
   <!-- ══ HORARIOS ══════════════════════════════════════════════════
@@ -271,6 +216,8 @@
     </div>
   </footer>
 
-  <script src="assets/js/main.js?v=3"></script>
+  <script src="assets/js/catalogo-datos.js?v=4"></script>
+  <script src="assets/js/catalogo.js?v=4"></script>
+  <script src="assets/js/main.js?v=4"></script>
 </body>
 </html>
