@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Catálogo de Querida Yo Nails Studio — manicure, gelish, acrílicas, pedicure y nail art en Villa de Álvarez, Colima. Pide tu diseño por WhatsApp." />
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; img-src 'self' data:; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self';" />
+  <meta name="theme-color" content="#fbf7f1" />
+  <meta property="og:title" content="Catálogo · Querida Yo Nails Studio" />
+  <meta property="og:description" content="Diseños, precios y tiempos. Pide el tuyo por WhatsApp." />
+  <meta property="og:image" content="https://queridayonailsstudio.com/assets/img/logo.png" />
+  <title>Catálogo · Querida Yo Nails Studio</title>
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/img/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="dns-prefetch" href="https://wa.me" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Great+Vibes&family=Nunito+Sans:wght@400;600;700&display=swap" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ══ NAV ══════════════════════════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Querida <span class="script">yo</span></a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Menú" aria-expanded="false">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html"           class="js-nav-link">Inicio</a></li>
+        <li><a href="index.html#servicios" class="js-nav-link">Servicios</a></li>
+        <li><a href="index.html#galeria"   class="js-nav-link">Galería</a></li>
+        <li><a href="index.html#ubicacion" class="js-nav-link">Ubicación</a></li>
+        <li><a href="#" class="js-nav-link btn-nav js-wa"
+               data-msg="Hola 💅 me gustaría agendar una cita en Querida Yo Nails Studio">Agendar cita</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ══ ENCABEZADO ════════════════════════════════════════════════ -->
+  <header class="catalog-hero">
+    <div class="container">
+      <p class="cta-script">el arte de quererte</p>
+      <h1 class="section-title">Nuestro <span class="script">catálogo</span></h1>
+      <p class="section-text">Elige tu servicio o diseño favorito y pídelo directo por WhatsApp.</p>
+    </div>
+  </header>
+
+  <!-- ══ CATÁLOGO ══════════════════════════════════════════════════
+       Los productos se editan en assets/js/catalogo-datos.js
+  ═══════════════════════════════════════════════════════════════ -->
+  <section class="section-light catalog-section">
+    <div class="container">
+      <div class="catalog-filters" id="catalogFilters" role="toolbar" aria-label="Filtrar por categoría"></div>
+      <div class="catalog-grid" id="catalogGrid"></div>
+      <p class="schedule-note">Los precios pueden variar según el largo y la decoración. Pregunta por tu diseño sin compromiso.</p>
+    </div>
+  </section>
+
+  <!-- ══ LIGHTBOX ══════════════════════════════════════════════════ -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+    <button class="lightbox-close" type="button" aria-label="Cerrar">✕</button>
+    <img id="lightbox-img" src="data:," alt="" />
+  </div>
+
+  <!-- ══ CONTACTO / CTA ════════════════════════════════════════════ -->
+  <section id="contacto" class="section-cta">
+    <div class="container">
+      <h2 class="section-title">¿Tienes un diseño <span class="script">en mente?</span></h2>
+      <p class="section-text">Mándanos tu foto de inspiración y te decimos precio y tiempo.</p>
+      <div class="cta-buttons">
+        <a href="#" class="btn-primary btn-lg js-wa"
+           data-msg="Hola 💅 tengo un diseño en mente, ¿me pueden cotizar?">💬 Cotizar por WhatsApp</a>
+        <a href="#" class="btn-secondary btn-lg js-fb" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">📘 Facebook</a>
+        <a href="#" class="btn-secondary btn-lg js-ig" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">📸 Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ════════════════════════════════════════════════════ -->
+  <footer>
+    <div class="container footer-inner">
+      <span class="footer-brand">Querida <span class="script">yo</span> · nails studio</span>
+      <p class="footer-copy">© 2026 Querida Yo Nails Studio · El arte de quererte</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/catalogo-datos.js"></script>
+  <script src="assets/js/catalogo.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

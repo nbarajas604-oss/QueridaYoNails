@@ -14,12 +14,6 @@ document.querySelectorAll('.js-wa').forEach(a => {
   a.rel = 'noopener noreferrer';
   a.referrerPolicy = 'no-referrer';
 });
-document.querySelectorAll('.js-catalogo').forEach(a => {
-  a.href = `https://wa.me/c/${NEGOCIO.whatsapp}`;
-  a.target = '_blank';
-  a.rel = 'noopener noreferrer';
-  a.referrerPolicy = 'no-referrer';
-});
 document.querySelectorAll('.js-maps').forEach(a => { a.href = NEGOCIO.maps; });
 if (NEGOCIO.telefono) {
   document.querySelectorAll('.js-tel').forEach(a => {
@@ -80,7 +74,7 @@ function closeLightbox() {
   lightbox.classList.remove('active');
   document.body.style.overflow = '';
 }
-lightbox.addEventListener('click', (e) => { if (e.target !== lightboxImg) closeLightbox(); });
+lightbox?.addEventListener('click', (e) => { if (e.target !== lightboxImg) closeLightbox(); });
 document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
 
 // ── Animación de entrada al hacer scroll ────────────────────────────
@@ -93,7 +87,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.12 });
 
-document.querySelectorAll('.service-card, .pillar, .location-item, .gallery-item')
+document.querySelectorAll('.service-card, .pillar, .location-item, .gallery-item, .catalog-card')
   .forEach(el => {
     el.classList.add('fade-in');
     observer.observe(el);
