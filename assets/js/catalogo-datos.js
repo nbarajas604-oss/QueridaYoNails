@@ -27,6 +27,14 @@ const GALERIA = [
   'elijo-brillar-06.jpg', 'soy-fuerte-03.jpg', 'elijo-brillar-08.jpg'
 ];
 
+// Reels de Facebook en "Lo más nuevo" (número que aparece en facebook.com/reel/NÚMERO)
+// Pon primero el más reciente. Se muestran los primeros 3.
+const PUBLICACIONES = [
+  '1095477813357165',   // Halloween
+  '3045423175818691',   // ¡Un sueño más que se cumple en casa!
+  '28963847196639416'   // Pasos firmes y llenos de luz
+];
+
 const CATALOGO = [
   {
     categoria: 'manos',

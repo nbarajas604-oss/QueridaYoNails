@@ -69,6 +69,23 @@ if (galleryGrid) {
   });
 }
 
+// ── Página principal: reels de Facebook ─────────────────────────────
+const fbGrid = document.getElementById('fbGrid');
+if (fbGrid && typeof PUBLICACIONES !== 'undefined') {
+  PUBLICACIONES.slice(0, 3).forEach((id, i) => {
+    const marco = el('div', 'fb-reel');
+    const f = el('iframe');
+    const reel = encodeURIComponent(`https://www.facebook.com/reel/${id}/`);
+    f.src = `https://www.facebook.com/plugins/video.php?href=${reel}&show_text=false&width=320`;
+    f.title = `Publicación de Facebook ${i + 1}`;
+    f.loading = 'lazy';
+    f.allow = 'autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share';
+    f.allowFullscreen = true;
+    marco.appendChild(f);
+    fbGrid.appendChild(marco);
+  });
+}
+
 // ── Página de catálogo ──────────────────────────────────────────────
 const filtros = document.getElementById('catalogFilters');
 const grid    = document.getElementById('catalogGrid');

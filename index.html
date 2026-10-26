@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Querida Yo Nails Studio — Manicure, gelish, uñas acrílicas, pedicure y nail art en Villa de Álvarez, Colima. El arte de quererte. Agenda tu cita por WhatsApp." />
   <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; img-src 'self' data:; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self';" />
+        content="default-src 'self'; img-src 'self' data:; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'; frame-src https://www.facebook.com;" />
   <meta name="theme-color" content="#fbf7f1" />
   <meta property="og:title" content="Querida Yo Nails Studio" />
   <meta property="og:description" content="El arte de quererte. Agenda tu cita por WhatsApp." />
@@ -18,7 +18,7 @@
   <link rel="dns-prefetch" href="https://wa.me" />
   <link rel="preload" as="image" href="assets/img/logo.webp" type="image/webp" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Great+Vibes&family=Nunito+Sans:wght@400;600;700&display=swap" />
-  <link rel="stylesheet" href="assets/css/style.css?v=5" />
+  <link rel="stylesheet" href="assets/css/style.css?v=6" />
 </head>
 <body>
 
@@ -110,6 +110,21 @@
       <h2 class="section-title">Nuestro <span class="script">trabajo</span></h2>
       <p class="section-text">Cada set, una pequeña obra de arte. Inspírate para tu próxima cita.</p>
       <div class="gallery-grid" id="galleryGrid"></div>
+    </div>
+  </section>
+
+  <!-- ══ LO MÁS NUEVO (FACEBOOK) ═══════════════════════════════════
+       Los reels se eligen en PUBLICACIONES dentro de assets/js/catalogo-datos.js
+  ═══════════════════════════════════════════════════════════════ -->
+  <section id="novedades" class="section-blush">
+    <div class="container">
+      <div class="divider" aria-hidden="true"><span>❀</span></div>
+      <h2 class="section-title">Lo más <span class="script">nuevo</span></h2>
+      <p class="section-text">Nuestras publicaciones más recientes en Facebook.</p>
+      <div class="fb-grid" id="fbGrid"></div>
+      <div class="catalog-cta">
+        <a href="#" class="btn-secondary js-fb" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">📘 Ver más en Facebook</a>
+      </div>
     </div>
   </section>
 
@@ -222,8 +237,8 @@
     </div>
   </footer>
 
-  <script src="assets/js/catalogo-datos.js?v=5"></script>
-  <script src="assets/js/catalogo.js?v=5"></script>
-  <script src="assets/js/main.js?v=5"></script>
+  <script src="assets/js/catalogo-datos.js?v=6"></script>
+  <script src="assets/js/catalogo.js?v=6"></script>
+  <script src="assets/js/main.js?v=6"></script>
 </body>
 </html>
