@@ -1,0 +1,47 @@
+# Revisa la página de Facebook y pone los reels más nuevos en "Lo más nuevo".
+# Corre cada 3 horas, y también a mano desde GitHub: Actions → "Reels de Facebook" → Run workflow.
+name: Reels de Facebook
+
+on:
+  schedule:
+    - cron: '17 */3 * * *'   # cada 3 horas (hora UTC)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: facebook-reels
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Consultar Facebook
+        env:
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+        run: python .github/scripts/actualizar_publicaciones.py
+
+      - name: Guardar cambios y publicar
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet -- assets/js/publicaciones.js; then
+            echo "Nada que publicar."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/js/publicaciones.js
+          git commit -m "Actualizar reels de Facebook"
+          git push
+          # Los pushes hechos por Actions no siempre disparan GitHub Pages; se pide la publicación
+          gh api -X POST "repos/${{ github.repository }}/pages/builds" || true

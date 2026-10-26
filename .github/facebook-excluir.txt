@@ -1,0 +1,6 @@
+# Reels que NO deben aparecer en la página (un número por línea).
+# El número es el que sale en facebook.com/reel/NÚMERO
+# Úsalo para reels que Facebook bloquea fuera de su sitio (música con derechos)
+# o que simplemente no quieran mostrar.
+
+3045423175818691  # ¡Un sueño más que se cumple en casa! (Facebook no permite insertarlo)
