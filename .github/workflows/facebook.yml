@@ -1,10 +1,10 @@
 # Revisa la página de Facebook y pone los reels más nuevos en "Lo más nuevo".
-# Corre cada 3 horas, y también a mano desde GitHub: Actions → "Reels de Facebook" → Run workflow.
+# Corre una vez a la semana, y también a mano desde GitHub: Actions → "Reels de Facebook" → Run workflow.
 name: Reels de Facebook
 
 on:
   schedule:
-    - cron: '17 */3 * * *'   # cada 3 horas (hora UTC)
+    - cron: '0 15 * * 1'   # lunes 15:00 UTC = 9:00 AM en Colima
   workflow_dispatch:
 
 permissions:
